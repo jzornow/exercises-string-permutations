@@ -6,7 +6,7 @@ ARGV.each do |phrase|
   permutations = PermutationGenerator.new(phrase)
                                      .list_permutations
 
-  puts "\nPermutations of #{phrase}:"
+  puts "\nFound #{permutations.count} permutations for \"#{phrase}\""
   permutations.each do |permutation|
     puts " - #{permutation}"
   end
